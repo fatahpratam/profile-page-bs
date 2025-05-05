@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Mendeklarasikan encoding karakter yang digunakan oleh dokumen ini. -->
+  <meta charset="UTF-8">
+
+  <!-- Membuat halaman menjadi responsif. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Menentukan nama penulis dokumen. -->
+  <meta name="author" content="Fatah Pratama">
+
+  <!-- Menentukan deskripsi singkat tentang isi dokumen. -->
+  <meta name="description" content="Ini adalah contoh sample halaman profil">
+
+  <!-- Menghubungkan dokumen ini dengan CSS milik Bootstrap, agar saya dapat menggunakan kelas yang telah disediakan oleh Bootstrap. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+  <!-- Menghubungkan dokumen ini dengan Custom CSS saya. -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Mewakili judul halaman. -->
+  <title>Profile Sample</title>
+</head>
+
+<body>
+  <!-- Bagian header dari halaman. Mewakili gambar background gunung yang di atas halaman. -->
+  <header class="header"></header>
+
+  <!-- Bagian main dari halaman. Berisi bagian profil dan bagian showcase dari halaman.-->
+  <main class="container">
+    <div class="row">
+
+      <!-- Bagian profil dari halaman. Berisi informasi umum pengguna seperti nama, pekerjaan, email, jumlah pengikut, dsb. -->
+      <section class="col-12 col-md-6 col-lg-4 text-center mt-5">
+        <img src="./img/profile-picture.png" alt="Foto profil" class="img-fluid w-25">
+        <h2 class="h3 mt-3">Fatah Pratama</h2>
+        <p class="text-muted mb-1">Web Developer</p>
+        <p class="text-muted mb-5">fatah.pratama@example.com</p>
+        <div class="container border-bottom border-bottom-1 mb-3">
+          <div class="row">
+            <div class="col">
+              <p class="mb-1"><strong>342.123</strong></p>
+              <p class="text-muted">Pengikut</p>
+            </div>
+            <div class="col">
+              <p class="mb-1"><strong>139</strong></p>
+              <p class="text-muted">Mengikuti</p>
+            </div>
+            <div class="col">
+              <p class="mb-1"><strong>4.54jt</strong></p>
+              <p class="text-muted">Suka</p>
+            </div>
+          </div>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, laboriosam. Ex fugiat esse aliquam
+          mollitia atque quisquam possimus? Id, magnam.</p>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-2">
+              <a href="#">
+                <img src="./img/icons/twitter-icon.png" alt="Ikon twitter" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-2">
+              <a href="#">
+                <img src="./img/icons/pinterest-icon.png" alt="Ikon pinterest" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-2">
+              <a href="#">
+                <img src="./img/icons/facebook-icon.png" alt="Ikon facebook" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary mt-3">Ikuti</button>
+      </section>
+
+      <!-- Bagian showcase dari halaman. Berisi konten yang telah diupload oleh pengguna seperti foto, video, dan postingan. -->
+      <section class="col-12 col-md-6 col-lg-8 mt-5">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Semua</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Foto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Video</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Postingan</a>
+          </li>
+        </ul>
+        <div class="container mt-3">
+          <div class="row row-gap-3">
+            <div class="col-6 col-lg-4 col-xxl-3">
+              <div class="card">
+                <img src="./img/photos/beach.jpg" alt="Foto pantai" class="card-img-top">
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 col-xxl-3">
+              <div class="card">
+                <img src="./img/photos/countryside.jpg" alt="Foto pedesaan" class="card-img-top">
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 col-xxl-3">
+              <div class="card">
+                <img src="./img/photos/forest.jpg" alt="Foto hutan" class="card-img-top">
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 col-xxl-3">
+              <div class="card">
+                <img src="./img/photos/mountain.jpg" alt="Foto gunung" class="card-img-top">
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 col-xxl-3">
+              <div class="card">
+                <img src="./img/photos/ocean.jpg" alt="Foto laut" class="card-img-top">
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 col-xxl-3">
+              <div class="card">
+                <img src="./img/photos/river.jpg" alt="Foto sungai" class="card-img-top">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Bagian footer dari halaman. Berisi nama pembuat dari website ini (Saya :D). -->
+  <footer>
+    <p class="text-center mt-5">Dibuat oleh <strong>Fatah Pratama</strong></p>
+  </footer>
+
+  <!-- Menghubungkan dokumen ini dengan javascript milik Bootstrap, untuk mengaktifkan interaksi dan animasi tambahan dari component-component maupun kelas-kelas Bootstrap. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

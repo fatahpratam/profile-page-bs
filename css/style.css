@@ -1,0 +1,8 @@
+/* Setelah saya mencoba mencari-cari, saya tidak berhasil menemukan kelas Bootstrap ekuivalen untuk property CSS 'background-image'. Sehingga saya terpaksa harus menggunakan vanilla CSS. Kelas ini mewakili header bergambar yang ada di atas halaman. */
+.header {
+  height: 10rem;
+  background-color: skyblue;
+  background-image: url('../img/wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+}
