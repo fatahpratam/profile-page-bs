@@ -1,3 +1,4 @@
+// Melakukan registrasi service worker jika fitur service worker didukung oleh browser client.
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js')
     .then(() => {
@@ -8,9 +9,9 @@ if ('serviceWorker' in navigator) {
     })
 }
 
-checkConnection()
+// Melakukan pengecekan koneksi internet dengan melakukan fetch dokumen "README.md". Jika, fetch gagal (karena tidak ada koneksi), maka akan menampilkan pemberitahuan khusus.
 function checkConnection() {
-  fetch('/README.md')
+  fetch('./README.md')
     .catch(err => {
       const noticeElement = document.createElement('div');
       noticeElement.className = 'text-center mb-3'
@@ -24,3 +25,4 @@ function checkConnection() {
       })
     })
 }
+checkConnection()

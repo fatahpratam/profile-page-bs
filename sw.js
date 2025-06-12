@@ -1,4 +1,7 @@
+// Nama dari cache-nya
 const staticCacheName = 'static-cache'
+
+// Daftar asset yang akan di-cache
 const assets = [
   './',
   './index.html',
@@ -20,6 +23,7 @@ const assets = [
   'https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js'
 ]
 
+// Menyimpan daftar asset sebelumnya ke dalam cache saat service worker berhasil terinstall.
 self.addEventListener('install', e => {
   console.log('Service worker telah terinstall.')
   e.waitUntil(
@@ -31,6 +35,7 @@ self.addEventListener('install', e => {
   )
 })
 
+// Mendengarkan event fetch sehingga dapat melakukan pencegatan jaringan. Jika request cocok dengan cache, maka akan mengembalikan data cache. Namun, jika tidak ada request yang cocok, maka diperbolehkan untuk melakukan fetching tersendiri.
 self.addEventListener('fetch', e => {
   e.respondWith(
     caches.match(e.request).then(cacheRes => {
